@@ -1,6 +1,6 @@
 import React from 'react';
 import headerImg from '../images/badge-header.svg';
-import myAvatar from '../images/avatar_me.jpg';
+// import myAvatar from '../images/avatar_me.jpg';
 import './styles/Badge.css';
 
 class Badge extends React.Component {
@@ -12,7 +12,7 @@ class Badge extends React.Component {
                 </div>
 
                 <div className="Badge__section-name">
-                    <img className="Badge__avatar" src={myAvatar} alt="avatar"/>
+                    <img className="Badge__avatar" src={this.props.avatarURL} alt="avatar"/>
                     <h1>{this.props.firstName} <br></br> {this.props.lastName}</h1>
                 </div>
 

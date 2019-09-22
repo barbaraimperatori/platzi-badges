@@ -14,5 +14,6 @@ ReactDOM.render(
         lastName = "Imperatori"
         jobTitle = "Frontend Developer"
         twitter = "ramblin_"
+        avatarURL = "https://avatars0.githubusercontent.com/u/38469360?s=460&v=4"
     />,
      container);
