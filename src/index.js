@@ -8,4 +8,11 @@ import './global.css';
 const container = document.getElementById('app');
 
 
-ReactDOM.render(<Badge/>, container);
+ReactDOM.render(
+    <Badge 
+        firstName = "Bárbara"
+        lastName = "Imperatori"
+        jobTitle = "Frontend Developer"
+        twitter = "ramblin_"
+    />,
+     container);
