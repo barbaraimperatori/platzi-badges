@@ -2,6 +2,7 @@ import React from 'react';
 import headerImg from '../images/badge-header.svg';
 // import myAvatar from '../images/avatar_me.jpg';
 import './styles/Badge.css';
+import Gravatar from './Gravatar';
 
 class Badge extends React.Component {
     render(){
@@ -12,7 +13,10 @@ class Badge extends React.Component {
                 </div>
 
                 <div className="Badge__section-name">
-                    <img className="Badge__avatar" src={this.props.avatarURL} alt="avatar"/>
+                    <Gravatar 
+                    className="Badge__avatar" 
+                    email={this.props.email}
+                    alt="avatar"/>
                     <h1>{this.props.firstName} <br></br> {this.props.lastName}</h1>
                 </div>
 
