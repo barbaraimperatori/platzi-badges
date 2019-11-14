@@ -2,6 +2,7 @@ import React from "react";
 import ConfLogo from "../images/badge-header.svg";
 import BadgesList from "../components/BadgesList";
 import PageLoading from "../components/PageLoading";
+import PageError from '../components/PageError';
 import { Link } from "react-router-dom";
 import api from "../api";
 import "./styles/Badge.css";
@@ -34,7 +35,7 @@ class Badges extends React.Component {
     }
 
     if(this.state.error){
-      return `Error: ${this.state.error.message}`;
+      return <PageError error={this.state.error} />;
     }
 
     return (
