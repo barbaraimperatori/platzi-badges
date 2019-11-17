@@ -5,7 +5,6 @@ class BadgeForm extends React.Component {
     console.log("click!");
   };
 
-
   render() {
     return (
       <div>
@@ -70,6 +69,10 @@ class BadgeForm extends React.Component {
           <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>
+
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
         </form>
       </div>
     );
