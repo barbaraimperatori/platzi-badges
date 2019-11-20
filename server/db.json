@@ -460,9 +460,9 @@
     {
       "firstName": "alaska",
       "lastName": "the cat",
-      "email": "",
-      "jobTitle": "",
-      "twitter": "",
+      "email": "alaska-cat@example.com",
+      "jobTitle": "fat cat",
+      "twitter": "fatcat",
       "id": "Ku3m4rk"
     },
     {
